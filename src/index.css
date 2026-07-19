@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Custom Grid Colors corresponding to the "Sophisticated Dark" theme */
+  --color-brand-navy: #05080F;           /* Deep midnight indigo background of Sophisticated Dark */
+  --color-brand-graphite: #0A0D16;       /* Slightly lighter dark for container panels */
+  --color-brand-racing: #004225;         /* British Racing Green */
+  --color-brand-stone: #F5F5F0;          /* Warm off-white */
+  --color-brand-slate: #1C1C1C;          /* Sophisticated Dark border color */
+  --color-brand-copper: #004225;         /* Racing green primary accent */
+  --color-brand-gold: #B2945B;           /* Antique gold accent */
+  --color-brand-aluminium: #F5F5F0;      /* Warm white */
+  --color-brand-steel: rgba(245, 245, 240, 0.5); /* Muted off-white */
+}
+
+@layer base {
+  body {
+    background-color: #05080F;
+    color: #F5F5F0;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom aesthetic utility: Fine engineering blueprint grid lines */
+.grid-blueprint {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.grid-blueprint-light {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Hide scrollbar for clean appearance */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

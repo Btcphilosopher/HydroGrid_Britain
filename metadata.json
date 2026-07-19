@@ -1,0 +1,6 @@
+{
+  "name": "Hydrogrid Britain",
+  "description": "Britain's Hydrogen Marketplace - Connecting Producers, Industry, and Transport.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
